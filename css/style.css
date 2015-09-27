@@ -1,0 +1,7 @@
+H2 { font-family:'arial'; }
+
+.container {
+	width:216px;
+	height: 50px;
+	display: inline-block;
+}
