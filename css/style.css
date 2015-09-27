@@ -1,4 +1,11 @@
-H2 { font-family:'arial'; }
+H2 { 
+	font-family: Helvetica; 
+}
+
+.liquidFillGaugeText { 
+	font-family: Helvetica; 
+	font-weight: bold; 
+}
 
 .container {
 	width:216px;

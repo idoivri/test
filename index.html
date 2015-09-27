@@ -6,11 +6,150 @@
 
 <script src="./js/d3.v2.js"></script>  
 <script src="./js/charts.min.js"></script>
+<script src="./js/liquidFillGauge.js" language="JavaScript"></script>
+
 <link rel="stylesheet" type="text/css" href="./css/style.css"/>
-
-
+ 
 </head>
 <body>
+
+<h1 align="center">Hebrew Wikitionary: Key Statistics</h1>
+
+<div class="container">
+    <div id="chart_area3">
+    <h2 align="center">Article Count:</h2>
+    <h3 align="center">17,705</h3>
+
+    <svg id="fillgauge1" width="100%" height="200" onclick="gauge1.update(NewValue());"></svg>
+
+    <script charset="utf-8" language="JavaScript">  
+        var config1 = liquidFillGaugeDefaultSettings();
+        config1.circleColor = "#137B13";
+        config1.textColor = "#137B13";
+        config1.waveTextColor = "#31A231";
+        config1.waveColor = "#5BC85B";
+        config1.circleThickness = 0.2;
+        config1.textVertPosition = 0.2;
+        config1.waveAnimateTime = 1000;
+        config1.waveHeightScaling = false;
+        var gauge1= loadLiquidFillGauge("fillgauge1", 4, config1);
+
+    </script>
+
+    </div>  
+</div>
+
+<div class="container">
+    <div id="chart_area4">
+    <h2 align="center">Edits / Month:</h2>
+    <h3 align="center">2,590</h3>
+
+    <svg id="fillgauge2" width="100%" height="200" onclick="gauge3.update(NewValue());"></svg>
+
+    <script charset="utf-8" language="JavaScript">  
+        var config2 = liquidFillGaugeDefaultSettings();
+        config2.circleColor = "#137B13";
+        config2.textColor = "#137B13";
+        config2.waveTextColor = "#31A231";
+        config2.waveColor = "#5BC85B";
+        config2.circleThickness = 0.2;
+        config2.textVertPosition = 0.2;
+        config2.waveAnimateTime = 1000;
+        config2.minValue = 0;
+        config2.maxValue = 1700;
+        config2.waveHeightScaling = false;
+        var gauge2= loadLiquidFillGauge("fillgauge2", 1582, config2);
+
+    </script>
+
+    </div>  
+</div>
+
+<div class="container">
+    <div id="chart_area5">
+    <h2 align="center">Active Editors:</h2>
+    <h3 align="center">29</h3>
+
+
+    <svg id="fillgauge3" width="100%" height="200" onclick="gauge3.update(NewValue());"></svg>
+
+    <script charset="utf-8" language="JavaScript">  
+        var config3 = liquidFillGaugeDefaultSettings();
+        config3.circleColor = "#137B13";
+        config3.textColor = "#137B13";
+        config3.waveTextColor = "#31A231";
+        config3.waveColor = "#5BC85B";
+        config3.circleThickness = 0.2;
+        config3.textVertPosition = 0.2;
+        config3.waveAnimateTime = 1000;
+        config3.minValue = 0;
+        config3.maxValue = 700;
+        config3.waveHeightScaling = false;
+        var gauge3= loadLiquidFillGauge("fillgauge3", 480, config3);
+
+    </script>
+
+    </div>  
+</div>
+
+<div class="container">
+    <div id="chart_area5">
+    <h2 align="center">Very Active Editors:</h2>
+    <h3 align="center">8</h3>
+
+
+    <svg id="fillgauge5" width="100%" height="200" onclick="gauge3.update(NewValue());"></svg>
+
+    <script charset="utf-8" language="JavaScript">  
+        var config5 = liquidFillGaugeDefaultSettings();
+        config5.circleColor = "#062235";
+        config5.textColor = "#17405C";
+        config5.waveTextColor = "#346382";
+        config5.waveColor = "#5D8AA8";
+        config5.circleThickness = 0.2;
+        config5.textVertPosition = 0.2;
+        config5.waveAnimateTime = 1000;
+        config5.minValue = 0;
+        config5.maxValue = 50;
+        config5.displayPercent = false;
+        config5.waveHeightScaling = false;
+        config5.waveHeight = 0;
+        var gauge5= loadLiquidFillGauge("fillgauge5", 8, config5);
+
+    </script>
+
+    </div>  
+</div>
+
+<div class="container">
+    <div id="chart_area5">
+    <h2 align="center">New Editors:</h2>
+    <h3 align="center">17</h3>
+
+
+    <svg id="fillgauge4" width="100%" height="200" onclick="gauge3.update(NewValue());"></svg>
+
+    <script charset="utf-8" language="JavaScript">  
+        var config4 = liquidFillGaugeDefaultSettings();
+        config4.circleColor = "#137B13";
+        config4.textColor = "#137B13";
+        config4.waveTextColor = "#31A231";
+        config4.waveColor = "#5BC85B";
+        config4.circleThickness = 0.2;
+        config4.textVertPosition = 0.2;
+        config4.waveAnimateTime = 1000;
+        config4.minValue = 0;
+        config4.maxValue = 950;
+        config4.waveHeightScaling = false;
+        var gauge4= loadLiquidFillGauge("fillgauge4", 750, config4);
+
+    </script>
+
+    </div>  
+</div>
+
+
+
 
 <div class="container">
 <div id="chart_area1">
@@ -20,10 +159,9 @@
 
 <div class="container">
 <div id="chart_area2">
-<h2 align="center">Edits/Month</h2>
+<h2 align="center">Edits / Month</h2>
 </div>  
 </div>
-
 
 <script charset="utf-8">  
 
